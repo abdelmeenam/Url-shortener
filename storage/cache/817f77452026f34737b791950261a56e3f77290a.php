@@ -1,10 +1,17 @@
-
-<!-- jQuery -->
-<script src="<?php echo e(asset("admin/plugins/jquery/jquery.min.js")); ?>"></script>
-<!-- Bootstrap 4 -->
-<script src="<?php echo e(asset("admin/plugins/bootstrap/js/bootstrap.bundle.min.js")); ?>"></script>
-<!-- AdminLTE App -->
-<script src="<?php echo e(asset("admin/dist/js/adminlte.min.js")); ?>"></script>
+<!-- jQuery 3 -->
+<script src="<?php echo e(asset('admin/bower_components/jquery/dist/jquery.min.js')); ?>"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="<?php echo e(asset('admin/bower_components/bootstrap/dist/js/bootstrap.min.js')); ?>"></script>
+<!-- iCheck -->
+<script src="<?php echo e(asset('admin/plugins/iCheck/icheck.min.js')); ?>"></script>
+<script>
+    $(function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' /* optional */
+        });
+    });
+</script>
 </body>
-</html>
-<?php /**PATH C:\xampp\htdocs\ITRAX\Revision2022\projects\shorten\views/admin/auth/layouts/foot.blade.php ENDPATH**/ ?>
+</html><?php /**PATH C:\xampp\htdocs\ITRAX\Revision2022\projects\shorten\views/admin/auth/layouts/foot.blade.php ENDPATH**/ ?>

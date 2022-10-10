@@ -4,13 +4,13 @@
     <div class="login-logo">
         <a href="{{ url('/') }}">Shorten</a>
     </div>
-    <!-- /.login-logo -->
-    <div class="card">
-        <div class="card-body login-card-body">
-            @yield('content')
-        </div>
-    </div>
-</div>
-<!-- /.login-box -->
 
-@include ('admin.auth.layouts.foot')
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+
+        @yield('content')
+    </div>
+    
+</div>
+
+@include('admin.auth.layouts.foot')
